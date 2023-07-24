@@ -22,7 +22,7 @@ function createGalleryItemsMarkup(items) {
 
 galleryList.insertAdjacentHTML('beforeend', createGalleryItemsMarkup(galleryItems));
 
-document.addEventListener('DOMContentLoaded', function () {
+
   const lightbox = new SimpleLightbox('.gallery a', {
     captions: 'true',
     captionsData: 'alt',
@@ -30,4 +30,3 @@ document.addEventListener('DOMContentLoaded', function () {
     captionDelay: 250,
     
   });
-});
